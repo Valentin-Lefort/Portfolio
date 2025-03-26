@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
             navs.forEach(nav => nav.classList.add('dark-theme'));
             buttons.forEach(button => button.classList.add('dark-theme'));
             selects.forEach(select => select.classList.add('dark-theme'));
+            parapgrah.forEach(select => select.classList.add('dark-theme'));
         } else if (themeName === 'violet') {
             document.body.classList.add('violet-theme');
             divs.forEach(div => div.classList.add('violet-theme'));
@@ -46,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             navs.forEach(nav => nav.classList.add('violet-theme'));
             buttons.forEach(button => button.classList.add('violet-theme'));
             selects.forEach(select => select.classList.add('violet-theme'));
+            parapgrah.forEach(select => select.classList.add('violet-theme'));
         }
     }
 });

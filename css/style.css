@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body.dark-theme {
+body.dark-theme{
     @apply bg-gray-800 text-gray-100 !important;
 }
 
@@ -37,3 +37,14 @@ a.light-theme:hover {
 p.light-theme {
     color: black !important;
 }
+
+body.dark-theme,
+div.dark-theme,
+header.dark-theme,
+nav.dark-theme,
+button.dark-theme,
+select.dark-theme{
+    background-color: #1a202c !important;
+    color: white !important;
+}
+
