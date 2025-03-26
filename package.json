@@ -1,0 +1,16 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./css/style.css -o ./dist/style.css --watch"
+  },
+  "keywords": [],
+  "author": "Valentin Lefort",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

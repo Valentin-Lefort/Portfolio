@@ -1,0 +1,18 @@
+/* css/style.css or tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-100 text-gray-900;
+    /* Default light theme styles */
+}
+
+body.dark-theme {
+    @apply bg-gray-800 text-gray-100;
+}
+
+body.actual-theme {
+    @apply bg-violet-900 text-white;
+    /* "Actual" theme styles, using your site's colors */
+}

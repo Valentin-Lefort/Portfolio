@@ -1,0 +1,224 @@
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="Portfolio" name="description"/>
+
+    <link href="img/v-l-high-resolution-logo-transparent.png" rel="icon"/>
+    <title>Valentin Lefort Portfolio</title>
+    <link href="dist/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+            rel="stylesheet"
+            type="text/css"/>
+    <link
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+            rel="stylesheet"/>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+            crossorigin="anonymous"
+            src="https://kit.fontawesome.com/cabdd58b8c.js">
+    </script>
+</head>
+<body class="bg-darkpurple text-gray-100 h-vh">
+<!-- Navbar -->
+<nav class="bg-violet-950 p-6 flex items-center justify-between">
+    <!-- Brand Name -->
+    <div class="flex-shrink-0">
+        <img
+                alt=""
+                class="w-14"
+                src="img/v-l-high-resolution-logo-transparent.png"
+        />
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="flex items-center space-x-4 mx-auto">
+        <a
+                class="text-lg px-4 py-2 rounded-lg hover:bg-gray-700 transition"
+                href="#">Contact</a>
+    </div>
+
+    <!-- Form and Button -->
+    <div class="flex-shrink-0 flex items-center">
+        <form class="max-w-sm mx-auto">
+            <label class="sr-only " for="underline_select">Underline select</label>
+            <select class="block py-2.5 text-center text-ora px-0 w-full text-sm bg-transparent border-0 border-b-2 border-ora appearance-none focus:outline-none focus:bg-violet-950 focus:ring-0 peer"
+                    id="underline_select">
+                <option selected>Thème</option>
+                <option value="Clair">Clair</option>
+                <option value="Sombre">Sombre</option>
+                <option value="Violet">Violet</option>
+            </select>
+        </form>
+        <button
+                class="bg-violet-950 border-2 border-ora text-lg px-4 py-2 rounded-lg hover:bg-orange-600 transition ml-4"
+                id="cvButton"
+        >
+            CV
+        </button>
+    </div>
+
+    <div
+            class="fixed w-full h-full bg-black bg-opacity-80 z-10 hidden flex justify-center items-center top-0"
+            id="pdfOverlay"
+    >
+        <div class="bg-white rounded-lg p-4 w-[80rem] h-[40rem]">
+            <iframe
+                    height="600px"
+                    id="pdfViewer"
+                    src=""
+                    width="100%"
+            ></iframe>
+            <button
+                    class="bg-red-500 text-white px-4 py-2 rounded-lg mt-4 hover:bg-red-700"
+                    id="closePdfOverlay"
+            >
+                Close
+            </button>
+        </div>
+    </div>
+</nav>
+<!-- Line below the navbar -->
+<div class="w-full h-1 bg-ora rounded-b-xl"></div>
+
+<!-- Main Container -->
+<div class="flex container justify-between mx-auto mt-10">
+    <!-- Image Container -->
+    <div
+            class="border-2 border-ora w-3/5 h-96 rounded bg-violet-950 flex justify-center items-center"
+    >
+        <img
+                alt="Description of image"
+                class="h-full w-2/5 object-cover"
+                src="img/photo-transparent.png"
+        />
+    </div>
+    <!-- About Me Container -->
+    <div class="relative flex-1 ml-10 pt-4 border-2 border-ora text-center">
+        <h2 class="text-3xl font-bold mb-4 text-ora underline">À propos de moi</h2>
+        <p class="text-base font-bold mt-4 p-6">
+            Le monde d'Internet a constamment captivé mon intérêt, suscitant en
+            moi une passion pour la compréhension approfondie de son
+            fonctionnement. C’est pourquoi j’ai choisi de me re-orienté en tant
+            que développeur.
+        </p>
+        <div
+                class="absolute bottom-10 left-0 right-0 flex justify-center space-x-4 mb-4"
+        >
+            <div class="text-center flex flex-col items-center">
+                <div
+                        class="w-12 h-12 bg-ora rounded-full flex items-center justify-center"
+                >
+                    <img alt="Java Logo" class="w-6 h-6" src="img/Fiable.png"/>
+                </div>
+                <p class="text-sm mt-2">Fiable</p>
+            </div>
+            <div class="text-center flex flex-col items-center">
+                <div
+                        class="w-12 h-12 bg-ora rounded-full flex items-center justify-center"
+                >
+                    <img alt="Python Logo" class="w-6 h-6" src="img/Autodidacte.png"/>
+                </div>
+                <p class="text-sm mt-2">Autodidacte</p>
+            </div>
+            <div class="text-center flex flex-col items-center">
+                <div
+                        class="w-12 h-12 bg-ora rounded-full flex items-center justify-center"
+                >
+                    <img alt="HTML Logo" class="w-10 h-10" src="img/Teamwork.jpg"/>
+                </div>
+                <p class="text-sm mt-2">Esprit<br>D'équipe </p>
+            </div>
+            <div class="text-center flex flex-col items-center">
+                <div
+                        class="w-12 h-12 bg-ora rounded-full flex items-center justify-center"
+                >
+                    <img alt="CSS Logo" class="w-6 h-6" src="img/self%20learining.png"/>
+                </div>
+                <p class="text-sm mt-2 text-center">Auto-<br>Apprentissage</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project Container -->
+
+<section class="flex container justify-between mx-auto mt-10">
+    <div class="border-2 border-ora w-full h-fit rounded bg-violet-950 justify-center mb-10 pb-10">
+        <h2 class="text-3xl font-bold mb-8 text-ora text-center pt-4 underline">Projet personnel</h2>
+        <div class="flex space-x-4">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="w-4/5 h-fit border-2 border-ora rounded-lg flex flex-col items-center m-auto ">
+                            <p class="text-center underline w-full h-fit mt-2 text-ora font-bold">
+                                Project 1 - BlindTest via Spotify API
+                            </p>
+                            <div class="text-center flex justify-center space-x-2 mb-4">
+                                <a class="underline font-bold text-ora"
+                                   href="https://www.figma.com/proto/SrG8t32OAlf1Xi5o7b9FpT/Mobile---New-Year?node-id=0-1&t=Dh8emjFmm4kIzSBy-1">
+                                    Figma du projet </a>
+                                <span class="text-ora">- </span>
+                                <a class="underline font-bold text-ora"
+                                   href="https://github.com/Valentin-Lefort/newyearapp/tree/dev"> Github du projet </a>
+                            </div>
+
+                            <div class="flex justify-center space-x-2 space-x-6 mt-6 mb-4">
+                                <img alt="Image du projet mobile N°1" class="h-64 cursor-pointer zoomable"
+                                     src="img/NY-App2.png">
+                                <img alt="Image du projet mobile N°2" class="h-64 cursor-pointer zoomable"
+                                     src="img/NY-App1.png">
+                            </div>
+                            <p class="text-center w-full h-fit mt-2 text-center p-4 text-ora">
+                                Ce projet a été conçu pour s'amuser entre amis lors d'un week-end du Nouvel An
+                                2024-2025. Développé en Java <i class="fa-brands fa-java"></i>
+                                , il s'agit d'un blind test utilisant l'API de Spotify pour récupérer les musiques d'une
+                                playlist personnalisée. Actuellement en cours de développement.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="w-4/5 h-fit border-2 border-ora rounded-lg flex flex-col items-center m-auto ">
+                            <p class="text-center underline w-full h-fit mt-2 text-ora font-bold">
+                                Mini-jeux Projet
+                            </p>
+                            <div class="flex justify-center space-x-2 space-x-6 mt-6 mb-4">
+                                <img alt="Image du projet Mini jeux Web 1"
+                                     class="p-2 h-64 w-2/4 cursor-pointer zoomable"
+                                     src="img/MysteryScreen1.png">
+                                <img alt="Image du projet Mini jeux Web 2"
+                                     class="p-2 h-64 w-2/4 cursor-pointer zoomable"
+                                     src="img/MysteryScreen2.png">
+                                <!--                                <img class="h-64 w-2/4" src="img/MysteryScreen3.png">-->
+                            </div>
+                            <p class="text-center w-full h-fit mt-2 text-ora p-4">
+                                Ce projet est un exercice personnel visant à créer un mini-jeu inspiré de CodeNames. Il
+                                est développé en utilisant les trois langages de base du web :
+                                HTML5 <i class="fa-brands fa-html5"></i>, CSS3 <i class="fa-brands fa-css3"></i> et
+                                JavaScript <i class="fa-brands fa-js"></i>.
+                                Actuellement en cours de développement, l’objectif est de le déployer sur un serveur
+                                afin de le rendre jouable en ligne.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- scrollbar -->
+                <!--                <div class="swiper-scrollbar"></div>-->
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/carousels.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/zoomable-images.js"></script>
+<script src="js/PDF-viewer.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>
