@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body.dark-theme{
+body.dark-theme {
     @apply bg-gray-800 text-gray-100 !important;
 }
 
@@ -16,9 +16,13 @@ div.light-theme,
 header.light-theme,
 nav.light-theme,
 button.light-theme,
-select.light-theme{
+select.light-theme,
+footer.light-theme,
+input.light-theme,
+textarea.light-theme{
     background-color: white !important;
     color: black !important;
+    border-color: currentColor !important; /* Match border color to text color */
 }
 
 nav.light-theme {
@@ -27,13 +31,14 @@ nav.light-theme {
 
 button.light-theme {
     background-color: #e2e6ea !important;
-    border-color: #ced4da !important;
+    border-color: currentColor !important; /* Match border color to text color */
     color: #495057 !important;
 }
 
 a.light-theme:hover {
     background-color: #dee2e6 !important;
 }
+
 p.light-theme {
     color: black !important;
 }
@@ -43,8 +48,11 @@ div.dark-theme,
 header.dark-theme,
 nav.dark-theme,
 button.dark-theme,
-select.dark-theme{
+select.dark-theme,
+footer.dark-theme,
+input.dark-theme,
+textarea.dark-theme{
     background-color: #1a202c !important;
     color: white !important;
+    border-color: currentColor !important; /* Match border color to text color */
 }
-

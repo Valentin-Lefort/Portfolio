@@ -1,4 +1,4 @@
-/* css/style.css or tailwind.css */
+/* css/style.css */
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -748,6 +748,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -914,6 +918,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-10 {
@@ -2359,6 +2367,11 @@ video {
   color: rgb(252 163 17 / var(--tw-text-opacity, 1));
 }
 
+.text-violet-950 {
+  --tw-text-opacity: 1;
+  color: rgb(46 16 101 / var(--tw-text-opacity, 1));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -2730,27 +2743,58 @@ video {
   forced-color-adjust: none;
 }
 
-body {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity, 1));
-  /* Default light theme styles */
-}
-
 body.dark-theme {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
-  --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity, 1));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1)) !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(243 244 246 / var(--tw-text-opacity, 1)) !important;
 }
 
-body.actual-theme {
-  --tw-bg-opacity: 1;
-  background-color: rgb(76 29 149 / var(--tw-bg-opacity, 1));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-  /* "Actual" theme styles, using your site's colors */
+body.violet-theme {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(76 29 149 / var(--tw-bg-opacity, 1)) !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1)) !important;
+}
+
+body.light-theme,
+div.light-theme,
+header.light-theme,
+nav.light-theme,
+button.light-theme,
+select.light-theme,
+footer.light-theme{
+  background-color: white !important;
+  color: black !important;
+}
+
+nav.light-theme {
+  background-color: #fff !important;
+}
+
+button.light-theme {
+  background-color: #e2e6ea !important;
+  border-color: #ced4da !important;
+  color: #495057 !important;
+}
+
+a.light-theme:hover {
+  background-color: #dee2e6 !important;
+}
+
+p.light-theme {
+  color: black !important;
+}
+
+body.dark-theme,
+div.dark-theme,
+header.dark-theme,
+nav.dark-theme,
+button.dark-theme,
+select.dark-theme,
+footer.dark-theme{
+  background-color: #1a202c !important;
+  color: white !important;
 }
 
 @media (min-width: 640px) {
@@ -2808,6 +2852,10 @@ body.actual-theme {
   font-weight: 700;
 }
 
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
 .before\:hover\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
@@ -2855,3 +2903,4 @@ body.actual-theme {
     }
   }
 }
+

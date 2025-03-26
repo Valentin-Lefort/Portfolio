@@ -22,6 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
         selects.forEach(select => select.classList.remove('light-theme', 'dark-theme', 'violet-theme'));
         const parapgrah = document.querySelectorAll('p');
         parapgrah.forEach(select => select.classList.remove('light-theme', 'dark-theme', 'violet-theme'));
+        const footer = document.querySelectorAll('footer');
+        footer.forEach(select => select.classList.remove('light-theme', 'dark-theme', 'violet-theme'));
+        const input = document.querySelectorAll('input');
+        input.forEach(select => select.classList.remove('light-theme', 'dark-theme', 'violet-theme'));
+        const textarea = document.querySelectorAll('textarea');
+        textarea.forEach(select => select.classList.remove('light-theme', 'dark-theme', 'violet-theme'));
 
         // Add the new theme class to body, divs, headers, navs, buttons, and selects
         if (themeName === 'light') {
@@ -32,6 +38,10 @@ document.addEventListener('DOMContentLoaded', function () {
             buttons.forEach(button => button.classList.add('light-theme'));
             selects.forEach(select => select.classList.add('light-theme'));
             parapgrah.forEach(select => select.classList.add('light-theme'));
+            footer.forEach(select => select.classList.add('light-theme'));
+            input.forEach(select => select.classList.add('light-theme'));
+            textarea.forEach(select => select.classList.add('light-theme'));
+
         } else if (themeName === 'dark') {
             document.body.classList.add('dark-theme');
             divs.forEach(div => div.classList.add('dark-theme'));
@@ -40,6 +50,9 @@ document.addEventListener('DOMContentLoaded', function () {
             buttons.forEach(button => button.classList.add('dark-theme'));
             selects.forEach(select => select.classList.add('dark-theme'));
             parapgrah.forEach(select => select.classList.add('dark-theme'));
+            footer.forEach(select => select.classList.add('dark-theme'));
+            input.forEach(select => select.classList.add('dark-theme'));
+            textarea.forEach(select => select.classList.add('dark-theme'));
         } else if (themeName === 'violet') {
             document.body.classList.add('violet-theme');
             divs.forEach(div => div.classList.add('violet-theme'));
@@ -48,6 +61,9 @@ document.addEventListener('DOMContentLoaded', function () {
             buttons.forEach(button => button.classList.add('violet-theme'));
             selects.forEach(select => select.classList.add('violet-theme'));
             parapgrah.forEach(select => select.classList.add('violet-theme'));
+            footer.forEach(select => select.classList.add('violet-theme'));
+            input.forEach(select => select.classList.add('violet-theme'));
+            textarea.forEach(select => select.classList.add('violet-theme'));
         }
     }
 });
